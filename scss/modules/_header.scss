@@ -1,0 +1,135 @@
+.header {
+    background: url(../images/about__bg.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.navigation {
+    padding-top: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    padding-top: 74px;
+}
+
+.logo {
+    max-width: 192px;
+    max-height: 28px;
+
+    &__link {
+        display: block;
+        width: 192px;
+        height: 28px;
+    }
+
+    &__img {
+        width: 192px;
+        height: 28px;
+    }
+}
+
+.nav {   
+    max-width: 561px;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        width: 561px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        transition: all .3s;
+
+        &:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        &--arrow {
+            &::after {
+                content: '';
+                display: inline-block;
+                margin-left: 5px;
+                width: 14px;
+                height: 8px;
+                background: url(../images/icons/arrow.svg) no-repeat;
+
+            }
+        }
+    }
+}
+
+.account {
+    max-width: 244px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__elem {
+        width: 112px;
+    }
+
+    &__signup {
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        padding: 11px 28px;
+        background: #FF9F4B;
+        box-shadow: 0px 0px 9px rgba(171, 97, 32, 0.2);
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    &__login {
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        padding: 11px 28px;
+        transition: all .3s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.info {   
+    margin-top: 200px;
+    text-align: left;
+    color: #fff;
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 110%;
+    }
+
+    &__text {
+        padding-top: 20px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 135%;
+        font-family: 'Roboto', sans-serif;
+    }
+}

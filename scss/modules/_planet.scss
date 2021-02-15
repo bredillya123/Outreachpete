@@ -1,0 +1,58 @@
+.planet {
+    background: url(../images/about__bg.png) no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+    }
+
+    &__title {
+        padding-top: 100px;
+        padding-bottom: 30px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 110%;
+    }
+
+    &__info {
+        padding-bottom: 100px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 135%;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__img {
+        position: absolute;
+
+        &--first {
+            left: 17%;
+            top: 10%;
+            opacity: 20%;
+        }
+
+        &--second {
+            left: 50%;
+            top: 47%;
+            opacity: 70%;
+        }
+
+        &--third {
+            left: 73%;
+            top: 15%;
+            opacity: 70%;
+        }
+    }
+}
