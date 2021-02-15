@@ -20,6 +20,59 @@
 
 <header class="header">
 
+	<div class="mobile">
+
+		<div class="mobile__content">
+			<div class="logo">
+				<a href="#" class="logo__link">
+					<img src="./images/icons/logo.svg" alt="Main logo" class="logo__img">
+				</a>
+			</div><!-- block logo -->
+	
+			<div class="mobile__nav">
+	
+				<div class="burger">
+					<a href="#none" class="burger__btn">
+						<span class="burger__line"></span>
+					</a>
+				</div>
+	
+			</div><!-- block burger -->
+		</div>
+
+		<div class="accordion">
+			<ul class="accordion__list">	
+	
+				<li class="accordion__elem">
+					<a href="#" class="accordion__link">Home</a>
+				</li>
+	
+				<li class="accordion__elem">
+					<a href="#" class="accordion__link">Services</a>
+				</li>
+	
+				<li class="accordion__elem">
+					<a href="#" class="accordion__link">Case Studies</a>
+				</li>
+	
+				<li class="accordion__elem">
+					<a href="#" class="accordion__link">Blog</a>
+				</li>
+	
+				<li class="accordion__elem">
+					<a href="#" class="accordion__link">About Us</a>
+				</li>
+	
+				<li class="accordion__elem">
+					<a href="#" class="accordion__link">Contact</a>
+				</li>
+	
+				<a href="#" class="account__signup">Sign Up</a>
+				<a href="#" class="account__login">Log In</a>
+			</ul>
+		</div>
+	</div><!-- block for mobile -->
+
 	<div class="navigation">
 
 		<div class="logo">
@@ -68,13 +121,13 @@
 
 		<div class="content row">
 
-			<div class="col-md-5 col-sm-12 info">
+			<div class="col-md-4 col-sm-12 info">
 				<h1 class="info__title">About Us</h1>
 				<p class="info__text">OutreachPete is a white label link outreach agency for SEOs.</p>
 				<p class="info__text">Established in 2017, we provide a reliable and stress free solution to build links that move the needle for clients.</p>
 			</div>	<!-- block with content -->
 	
-			<div class="col-md-7 col-sm-12 picture">
+			<div class="col-md-8 col-sm-12 picture">
 				<img src="./images/about__people.png" alt="Big picture with people" class="picture__img">
 			</div><!-- block with big picture -->
 
@@ -170,7 +223,7 @@
 				<h1 class="planet__title">We Help You Help the Planet!</h1>
 			</div>
 
-			<div class="col-8 planet__info">
+			<div class="col-md-7 col-sm-12 planet__info">
 				<p class="planet__text">For every link you purchase via OutreachPete we plant a tree on your behalf. We work with Plant for the Planet to capture CO2 and release Oxygen back into the air, helping to contribute to a greener planet.</p>
 				<br>
 				<p class="planet__text">For example, if you take out one of our micro subscription packages you’d plant 8 trees every single month. Or if you just bought a single one-off link you’d plant 1 tree, it all helps!</p>
@@ -290,9 +343,29 @@
 			</a><!-- footer link elem -->
 
 		</div><!-- block footer contact info -->
+
+		<div class="footer__author--mobile">
+			<span class="footer__text">© 2020 • OutreachPete, all rights reserved</span>
+		</div><!-- block with content about developers -->
 	</div>
 
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script>
+	'use strict'
+
+$(document).ready(function () {
+
+// for burger mobile version
+  $('.burger__btn').on('click', function(e){
+      e.preventDefault;
+      $(this).toggleClass('burger__btn--active');
+      $('.accordion').toggleClass('accordion--active');
+  })
+
+})
+</script>
 
 </body>
 </html>
