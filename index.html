@@ -30,48 +30,47 @@
 			</div><!-- block logo -->
 	
 			<div class="mobile__nav">
+
+				<div class="account--mob">
+					<a href="#" class="account__signup">Sign Up</a>
+					<a href="#" class="account__login">Log In</a>
+				</div>
 	
 				<div class="burger">
 					<a href="#none" class="burger__btn">
 						<span class="burger__line"></span>
 					</a>
 				</div>
-	
+
 			</div><!-- block burger -->
 		</div>
-
-		<div class="accordion">
-			<ul class="accordion__list">	
-	
-				<li class="accordion__elem">
-					<a href="#" class="accordion__link">Home</a>
-				</li>
-	
-				<li class="accordion__elem">
-					<a href="#" class="accordion__link">Services</a>
-				</li>
-	
-				<li class="accordion__elem">
-					<a href="#" class="accordion__link">Case Studies</a>
-				</li>
-	
-				<li class="accordion__elem">
-					<a href="#" class="accordion__link">Blog</a>
-				</li>
-	
-				<li class="accordion__elem">
-					<a href="#" class="accordion__link">About Us</a>
-				</li>
-	
-				<li class="accordion__elem">
-					<a href="#" class="accordion__link">Contact</a>
-				</li>
-	
-				<a href="#" class="account__signup">Sign Up</a>
-				<a href="#" class="account__login">Log In</a>
-			</ul>
-		</div>
 	</div><!-- block for mobile -->
+
+	<div class="accordion">
+		<ul class="accordion__list">
+
+			<li class="accordion__elem">
+				<a href="#" class="accordion__link">Services</a>
+			</li>
+
+			<li class="accordion__elem">
+				<a href="#" class="accordion__link">Case Studies</a>
+			</li>
+
+			<li class="accordion__elem">
+				<a href="#" class="accordion__link">Blog</a>
+			</li>
+
+			<li class="accordion__elem">
+				<a href="#" class="accordion__link">About Us</a>
+			</li>
+
+			<li class="accordion__elem">
+				<a href="#" class="accordion__link">Contact</a>
+			</li>
+
+		</ul>
+	</div>
 
 	<div class="navigation">
 
@@ -295,9 +294,6 @@
 			<nav class="nav">
 				<ul class="nav__list">
 					<li class="nav__elem">
-						<a href="#" class="nav__link">Services</a>
-					</li>
-					<li class="nav__elem">
 						<a href="#" class="nav__link">Case Studies</a>
 					</li>
 					<li class="nav__elem">
@@ -347,6 +343,7 @@
 		<div class="footer__author--mobile">
 			<span class="footer__text">© 2020 • OutreachPete, all rights reserved</span>
 		</div><!-- block with content about developers -->
+
 	</div>
 
 </footer>
@@ -362,6 +359,7 @@ $(document).ready(function () {
       e.preventDefault;
       $(this).toggleClass('burger__btn--active');
       $('.accordion').toggleClass('accordion--active');
+	  $('.content').toggleClass('content--active');
   })
 
 })
